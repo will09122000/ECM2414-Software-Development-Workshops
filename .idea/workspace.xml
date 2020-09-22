@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9e4d43-e104-450f-bd4b-eae8c127625e" name="Default Changelist" comment="" />
+    <list default="true" id="1a9e4d43-e104-450f-bd4b-eae8c127625e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UggRock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UggRock.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UggRockSize.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UggRockSize.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UggRockType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UggRockType.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -31,8 +36,10 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Beanbags" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -43,6 +50,18 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -66,5 +85,13 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="440" y="187" key="#Project_Structure/0.0.1680.1050@0.0.1680.1050" timestamp="1600779921004" />
+    <state x="2653" y="351" key="CommitChangelistDialog2" timestamp="1600786905587">
+      <screen x="0" y="0" width="3840" height="1160" />
+    </state>
+    <state x="2653" y="351" key="CommitChangelistDialog2/0.0.3840.1160@0.0.3840.1160" timestamp="1600786905587" />
+    <state x="1749" y="339" key="FileChooserDialogImpl" timestamp="1600789412594">
+      <screen x="0" y="0" width="3840" height="1160" />
+    </state>
+    <state x="1749" y="339" key="FileChooserDialogImpl/0.0.3840.1160@0.0.3840.1160" timestamp="1600789412594" />
   </component>
 </project>

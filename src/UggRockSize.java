@@ -3,7 +3,7 @@ public enum UggRockSize {
 
     private short multiplierValue;
 
-    public short getMultiplierValue(){
+    public short getMultiplierValue() {
         return multiplierValue;
     }
 }
