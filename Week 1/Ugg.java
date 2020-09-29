@@ -8,11 +8,9 @@ public class Ugg
         NOT_SO_BIGUN(1);
 
         int multiplierValue;
-
         UggRockSize(int multiplierValue) {
             this.multiplierValue = multiplierValue; 
         }
-
         int getMultiplierValue() {
             return multiplierValue;
         }
@@ -25,11 +23,9 @@ public class Ugg
         HOT_HOT_HOT(15);
 
         int multiplierValue;
-
         UggRockType(int multiplierValue) {
             this.multiplierValue = multiplierValue; 
         }        
-
         int getMultiplierValue() {
             return multiplierValue;
         }
@@ -42,19 +38,15 @@ public class Ugg
         int rockValue() {
             return rockSize.getMultiplierValue() * rockType.getMultiplierValue();    
         }
-        
-        public UggRockSize returnUggRockSize(){
+        public UggRockSize returnUggRockSize() {
         	return rockSize;
         }
-        
-        public UggRockType returnUggRockType(){
+        public UggRockType returnUggRockType() {
         	return rockType;
         }
-        
         public String toString() {
             return rockSize.toString() + ", " + rockType.toString();
         }
-
         UggRock(UggRockSize rockSize, UggRockType rockType) {
             this.rockSize = rockSize;
             this.rockType = rockType;
@@ -78,7 +70,6 @@ public class Ugg
         } else {
             rockType = UggRockType.HOT_HOT_HOT;
         }
-        
         if (randSize < 6.0/9.0) {
             rockSize = UggRockSize.NOT_SO_BIGUN;
         } else if (randSize < 8.0/9.0) {
@@ -88,5 +79,30 @@ public class Ugg
         }
 
         return new UggRock(rockSize, rockType);
+    }
+    public static void main (String args[]) {
+        Thread t0 = new Thread() {
+            public void run() {
+                System.out.println(Thread.currentThread().getName() + " started.");
+                for (int i=1; i <=20; i++) {
+                    UggRock rock = new UggRock(null, null);
+                    //rock.drawRock();
+                    System.out.println(Thread.currentThread().getName() + " created rock. " + rock.returnUggRockSize() + ", " + rock.returnUggRockType());
+                }
+            }
+        };
+
+        Thread t1 = new Thread() {
+            public void run() {
+                System.out.println(Thread.currentThread().getName() + " started.");
+                for (int i=1; i <=20; i++) {
+                    UggRock rock = new UggRock(null, null);
+                    System.out.println(Thread.currentThread().getName() + " created rock. " + rock.returnUggRockSize() + ", " + rock.returnUggRockType());
+                }
+            }
+        };
+
+        t0.start();
+        t1.start();
     }
 }
